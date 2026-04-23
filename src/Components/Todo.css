@@ -1,0 +1,12 @@
+
+.todo__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 16px;
+}
+
+.Todo {
+width: calc(100%/3);
+	border: 1px solid black;
+	padding: 16px;
+}
