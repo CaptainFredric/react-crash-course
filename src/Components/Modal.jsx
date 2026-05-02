@@ -1,7 +1,7 @@
 import './Modal.css'
 
 
-function Modal({title}){
+function  Modal({title}){
   return(
     <><div>
       <div className="modal">
