@@ -7,11 +7,12 @@ import Modal from './Components/Modal.jsx'
 
 import React, { useState } from 'react';
 
-import count from './Components/Counter.jsx';
+import Counter from './Components/Counter.jsx';
 
 function App(){
 
 
+return <Counter />
 }
 
 export default App;

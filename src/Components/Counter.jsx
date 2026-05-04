@@ -1,4 +1,4 @@
-function count(){
+function Counter(){
     return(
 
 <div>
@@ -9,4 +9,4 @@ function count(){
     
 )}
 
-export default count;
+export default Counter;
