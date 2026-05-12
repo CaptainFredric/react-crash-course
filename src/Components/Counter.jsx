@@ -1,12 +1,26 @@
+import React, { useState } from 'react';
+
 function Counter(){
-    return(
 
-<div>
-<button> - </button>
+const [arr, setArr] = useState([]);
+function addPlus(){
+setArr((prevArr => [...prevArr, "+"]))
+}
 
-<button> + </button>
-</div>
-    
-)}
+function addMinus(){
+
+setArr((prevArr => [...prevArr, "-"]))
+}
+
+return(
+    <div> 
+
+<button onClick= {addPlus}>-</button>
+
+<button onClick= {addMinus}>-</button>
+{arr.toString()}
+    </div>
+);
+}
 
 export default Counter;
