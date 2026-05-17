@@ -1,20 +1,12 @@
 import './Todo.css';
 
-function Todo({ title, Modal}) {
-function deleteTodo(id){
-    console.log('deleteTodo()', title.toUpperCase())
-}
+function Todo({ title, OnTodoDelete }) {
     return (
-        <div className="Todo"> 
-            <p>
-                {title}
-            </p>
-          
-            <button onClick={()=>deleteTodo(1)}>
-               Delete
-            </button>
+        <div className="Todo">
+            <p>{title}</p>
+            <button onClick={OnTodoDelete}>Delete</button>
         </div>
-    )
+    );
 }
 
 export default Todo;
