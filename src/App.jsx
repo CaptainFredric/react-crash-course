@@ -1,5 +1,5 @@
 import "./App.css"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contact.jsx'
@@ -9,20 +9,20 @@ function App() {
 
   return (
     <div>
-      <Router>
-        <nav>
-        
-          <a href="/">Home</a>
-       <a href="/about">About</a>
-<a href="/contact">Contact</a>
+   <Router>
+      <nav>
 
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-        </Routes>
-      </Router>
+        <Link to="/">Home</Link>
+        <Link to="/">About</Link>
+        <Link to="/">Contact</Link>
+      </nav>
+
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element = {<About />}/>
+      <Route path="/contact" element = {<Contact />} />
+    </Routes>
+   </Router>
     </div>
   ); 
 }
